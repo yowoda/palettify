@@ -1,6 +1,10 @@
 # palettify - Apply color palettes to images within seconds
 
+## Requirements
+You will need either [pillow](https://github.com/python-pillow/Pillow) or [pillow-simd](https://github.com/uploadcare/pillow-simd). The latter might give a performance boost, however it does not support as many architectures.
+
 ## Installation
+The installation itself is quite easy, simply run:
 ```
 pip install palettify
 ```
