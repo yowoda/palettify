@@ -38,7 +38,7 @@ The color palette to use. If an integer `n`, palettify will try to find the `n` 
 If more than one input path is given, the output path **has** to be an existing directory. If only one input path is given, the output path can be either a directory or the path to a file. If no output path is given, palettify will create path duplicates of the input paths and add a `-palettified` suffix.
 
 ### -a/--autoscale (optional)
-If autoscale is enabled, palettify tries to find the desktop resolution and resizes the image accordingly, while keeping the original ratio. Defaults to `False`.
+If autoscale is enabled, palettify tries to find the desktop resolution and resizes the image accordingly, while keeping the original ratio. A display server is required Defaults to `False`.
 
 ### -w/--width (optional)
 The width of the palettified image. If `-h/--height` is not given, palettify will calculate the height to keep the original ratio.
