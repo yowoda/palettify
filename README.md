@@ -32,7 +32,15 @@ Invoke palettify using `palettify` or `python -m palettify`.
 You can input multiple images, each one pointing to an existing file. A list of supported image formats can be found [here](https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html).
 
 ### -p/--palette (required)
-The color palette to use. If an integer `n`, palettify will try to find the `n` most dominant colors in the original image and build the palette using those colors.
+The color palette to use. If an integer `n`, palettify will try to find the `n` most dominant colors in the original image and build the palette using those colors. Otherwise, a path to a JSON file should be specified, containing a list of RGB channels.
+```json
+[
+    [255, 255, 255],
+    [0, 0, 0],
+    [0, 255, 0],
+    [255, 255, 0]
+]
+```
 
 ### -o/--output (optional)
 If more than one input path is given, the output path **has** to be an existing directory. If only one input path is given, the output path can be either a directory or the path to a file. If no output path is given, palettify will create path duplicates of the input paths and add a `-palettified` suffix.
